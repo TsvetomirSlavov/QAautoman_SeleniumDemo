@@ -28,6 +28,8 @@ public class WebBaseTest {
     public void setupBeforeClass() throws Exception {
         // Create our webdriver instance
         driver = getDriver( DriverFactory.getBrowserTypeByProperty() );
+    	
+    	
         // Setup implicit driver wait
         driver.manage().timeouts().implicitlyWait(BASE_TIMEOUT_SECONDS, TimeUnit.SECONDS);
         // Setup our explicit WebDriverWait
